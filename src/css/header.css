@@ -9,24 +9,26 @@
   top: 32px;
   left: 0;
   width: 100%;
-  z-index: 1000; /* Вышэй за мабільнае меню */
+  z-index: 1000;
   transition: all 0.3s ease-in-out;
-  background: rgba(87, 111, 53, 0.9); /* Фон для мабільных */
+  background: rgba(87, 111, 53, 0.95);
 }
 
 .header-section.fixed {
   position: fixed;
   top: 0;
   background: rgba(87, 111, 53, 0.95);
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Лёгкі цень */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 320px;
-    padding: 0 16px;
+  width: 100%;
+  max-width: 1280px;
+  padding: 0 16px;
+  margin: 0 auto;
 }
 
 .hed-logo-icon {
@@ -50,15 +52,19 @@
   width: 32px;
   height: 32px;
 }
+
 @media only screen and (min-width: 375px) {
   .header-container {
-    width: 375px;
+    width: 100%;
+    max-width: 375px;
     padding: 0 20px;
   }
 }
+
 @media only screen and (min-width: 768px) {
   .header-container {
-    width: 768px;
+    width: 100%;
+    max-width: 768px;
     padding: 0 32px;
   }
   .hed-logo-icon {
@@ -70,9 +76,11 @@
     height: 40px;
   }
 }
+
 @media only screen and (min-width: 1280px) {
   .header-container {
-    width: 1280px;
+    width: 100%;
+    max-width: 1280px;
     padding: 0 100px;
   }
   .burger-btn {
@@ -103,9 +111,9 @@
     border: 1px solid #fbfbfb;
     border-radius: 12px;
     padding: 12px;
-    width: auto; /* Каб пункт не сціскаўся */
+    width: auto;
   }
-  .header-btn{
+  .header-btn {
     display: block;
     border-radius: 30px;
     padding: 16px 32px;
@@ -127,7 +135,7 @@
   .burger-btn:focus {
     background-color: #d4bfc4;
   }
-  
+
   .header-section {
     background: transparent;
   }
@@ -141,20 +149,20 @@
 }
 .nav-list .nav-link:hover {
   transform: scale(1.05);
-  background-color: #D4BFC4;
-  color: #7A3145;
+  background-color: #d4bfc4;
+  color: #7a3145;
   border: none;
 }
 .nav-list .nav-link:focus {
-  background-color: #FBFBFB;
-  color: #7A3145;
+  background-color: #fbfbfb;
+  color: #7a3145;
   border: none;
 }
 .header-btn:hover {
-  background-color: #D4BFC4;
-  color: #7A3145;
+  background-color: #d4bfc4;
+  color: #7a3145;
 }
 .header-btn:focus {
-  background-color: #FBFBFB;
-  color: #7A3145;
+  background-color: #fbfbfb;
+  color: #7a3145;
 }
